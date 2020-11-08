@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Lietuvos ornitologu draugija</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/3cfd2273f7.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div id="menu" class="grid-container">
+            <img src="/img/logo.png" alt="">
+            <div></div>
+            <h1>Lietuvos Paukščiai</h1>
+        </div>
+    </header>
+    <div class="content flex-container">
+       <%= render "/layouts/menu" %>
+
+    <section id="galerija">
+        <h2>Galerija</h2>
+        <div class="gallery-container" style="padding-top: 20px;">
+            <a href="kuosa.html" class="gallery-item">
+                <img src="/img/kuosa.jpg" alt="">
+                <h4>Kuosa</h4>
+            </a>
+            <div class="gallery-item">
+                <img src="/img/rudagalvis_kiras.jpg" alt="">
+                <h4>Rudagalvis kiras</h4>
+            </div>
+            <div class="gallery-item">
+                <img src="/img/juodoji_meleta.jpg" alt="">
+                <h4>Juodoji meleta</h4>
+            </div>
+        </div>
+        <div class="gallery-container" style="padding-top: 100px;">
+            <div class="gallery-item">
+                <img src="/img/upine_zuvedra.jpg" alt="">
+                <h4>Upinė žuvėdra</h4>
+            </div>
+            <div class="gallery-item">
+                <img src="/img/kersulis.jpg" alt="">
+                <h4>Keršulis</h4>
+            </div>
+            <div class="gallery-item">
+                <img src="/img/tulzys.jpg" alt="">
+                <h4>Tulžys</h4>
+            </div>
+        </div>
+    </section>
+    </div>
+    <footer>
+        <p>Copyright &copy; 2020 &emsp; &emsp;Lietuvos orientologų draugija</p>
+    </footer>
+</body>
+
+</html>

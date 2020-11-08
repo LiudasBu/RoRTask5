@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="lt-LT">
+
+<head>
+    <title>Lietuvos ornitologu draugija</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/3cfd2273f7.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div id="menu" class="grid-container">
+            <img src="/img/logo.png" alt="">
+            <div></div>
+            <h1>Lietuvos Paukščiai</h1>
+        </div>
+    </header>
+    <div class="content flex-container" style="justify-content: space-between;">
+          <%= render "/layouts/menu" %>
+
+        <div id="susisiekite"  style="padding-bottom:300px;">
+            <h3>Susisiekite su mumis!</h3>
+            <form>
+                <label for="vardas">Vardas:</label><br>
+                <input type="text" id="vardas" name="vardas"><br><br>
+                <label for="email">El. paštas:</label><br>
+                <input type="email" id="email" name="email"><br><br>
+                <label for="zinute">Žinutė:</label><br>
+                <textarea name="zinute" id="zinute" cols="30" rows="10"></textarea><br><br>
+                <input type="submit" value="Siųsti">
+            </form>
+        </div>
+        <div id="adresas">
+            <h3>Adresas</h3>
+            <address>Naugarduko gatvė 52</address>
+            <h3>Telefonas</h3>
+            <p>865280971</p>
+            <h3>El. paštas</h3>
+            <p>lod@pauksciai.lt</p>
+        </div>
+    </div>
+    <footer>
+        <p>Copyright &copy; 2020 &emsp; &emsp;Lietuvos orientologų draugija</p>
+    </footer>
+</body>
+
+</html>
